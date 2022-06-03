@@ -1,7 +1,7 @@
 export const schema = {
     "models": {
-        "Todo": {
-            "name": "Todo",
+        "Book": {
+            "name": "Book",
             "fields": {
                 "id": {
                     "name": "id",
@@ -14,7 +14,21 @@ export const schema = {
                     "name": "name",
                     "isArray": false,
                     "type": "String",
-                    "isRequired": true,
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "author": {
+                    "name": "author",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "cover": {
+                    "name": "cover",
+                    "isArray": false,
+                    "type": "AWSURL",
+                    "isRequired": false,
                     "attributes": []
                 },
                 "description": {
@@ -42,7 +56,7 @@ export const schema = {
                 }
             },
             "syncable": true,
-            "pluralName": "Todos",
+            "pluralName": "Books",
             "attributes": [
                 {
                     "type": "model",
@@ -69,5 +83,5 @@ export const schema = {
     },
     "enums": {},
     "nonModels": {},
-    "version": "4401034582a70c60713e1f7f9da3b752"
+    "version": "d292e2b9f78a12bf66a7b3c2a14949b4"
 };
