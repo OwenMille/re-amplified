@@ -5,9 +5,12 @@
  **************************************************************************/
 
 import React from "react";
+import { Book } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
 import { FlexProps } from "@aws-amplify/ui-react";
-export declare type NavBarProps = React.PropsWithChildren<Partial<FlexProps> & {
+export declare type ReviewCardProps = React.PropsWithChildren<Partial<FlexProps> & {
+    book?: Book;
+} & {
     overrides?: EscapeHatchProps | undefined | null;
 }>;
-export default function NavBar(props: NavBarProps): React.ReactElement;
+export default function ReviewCard(props: ReviewCardProps): React.ReactElement;

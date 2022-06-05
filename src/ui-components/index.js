@@ -3,5 +3,4 @@
  * Please refrain from making any modifications to this file.              *
  * Any changes to this file will be overwritten when running amplify pull. *
  **************************************************************************/
-
-export { default as NavBar } from "./NavBar";
+export { default as ReviewCard } from "./ReviewCard";

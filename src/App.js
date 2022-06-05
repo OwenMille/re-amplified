@@ -6,7 +6,9 @@ import './App.css'
 import { DefaultDivider, ReAmplified } from './components'
 import React, { useState } from "react";
 import { render } from "react-dom";
-
+import { 
+  ReviewCard 
+} from './ui-components';
 Amplify.configure(awsExports);
 
 function App({ signOut, user }) {
@@ -49,6 +51,8 @@ function App({ signOut, user }) {
       <DefaultDivider/>
       <Heading level={2}>reamplified</Heading>
       <ReAmplified/>
+      <br></br>
+      <ReviewCard />
       </div>
   );
 }
